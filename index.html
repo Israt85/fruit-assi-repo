@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fruit Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- font awsome -->
+<script src="https://kit.fontawesome.com/aefe7f35af.js" crossorigin="anonymous"></script>
+<style>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            bg-nav:'#F85559;',
+          }
+        }
+      }
+    }
+  </script>
+  .font-lato{
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Lato', sans-serif;
+  }
+</style>
+</head>
+<body class="font-lato">
+    <header class="max-w-screen-xl mx-20 text-white">
+        <div class="navbar bg-red-400 rounded-3xl">
+            <div class="w-full mx-auto navbar-start">
+                <div class="flex gap-5 list-none font-bold">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+                </div>
+            </div>
+            <div class=" w-full mx-auto">
+                <div>
+                    <img src="./images/logo.png" alt="">
+                </div>
+              <a class=" text-3xl">Fruit Burst</a>
+            </div>
+            <div class=" max-w-screen-xl mx-auto lg:my-5 rounded-full bg-white flex">
+              <input
+                type="text"
+                class="w-auto h-10 py-2 px-4 rounded-full text-gray-700
+                " placeholder="Search here"
+              /> 
+              <div class="relative -left-5">
+              <i class="fa-solid fa-magnifying-glass text-black"></i>
+            </div>
+            </div>
+            
+              
+          </div>
+    </header>
+    <main>
+      
+      <div class="carousel max-w-screen-xl mx-20 my-5 py-5">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/banner1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+        <div class="max-w-screen-xl mx-60 h-40 flex sm:flex-col-1 items-center justify-center bg-white rounded-xl relative -mt-40">
+          <img src="/images/fruit1.png" alt="">
+          <img src="/images/fruit2.png" alt="">
+          <img src="/images/fruit3.png" alt="">
+          <img src="/images/fruit4.png" alt="">
+          <img src="/images/fruit5.png" alt="">
+        </div>
+      <section class=" max-w-screen-xl mx-auto my-5 px-20 flex justify-between items-center">
+        <div class=>
+          <h3 class="text-5xl font-extrabold pb-5">Deal of the day</h3>
+          <p class="text-xl">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              
+              <span style="--value:29;"></span>
+            </span>
+            days
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-7xl font-bold">
+              <span style="--value:15;"></span>
+            </span>
+            hours
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <span style="--value:25;"></span>
+             
+            </span>
+            min
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <span style="--value:08;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
